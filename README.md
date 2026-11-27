@@ -10,6 +10,14 @@ We compare a computer simulation with an answer calculated from established equa
 
 The red box is the main measurement area. The dashed line is the theoretical shock. The red dots show the measured shock position. See [how measurements work](docs/METHOD.md).
 
+## ParaView update — v1.3.0
+
+Explore pressure, density and Mach number in native ParaView pictures, compare all three meshes with the same color scale, and reopen an editable ParaView state. The update also includes 801 line samples per mesh and a chart showing the shock transition. Read the [simple ParaView guide](docs/PARAVIEW_GUIDE.md) to understand and reproduce the views.
+
+![Pressure on three meshes using the same color scale](paraview/mesh_comparison.png)
+
+These views use the existing baseline simulations. They add ways to inspect the evidence; they do not change the original measurements.
+
 ## Checklist progress — v1.2.0
 
 Completed 12 fresh simulations, compared all five measurement areas, and checked a second shock detector. The full suite now passes 18 tests. Read the [completed verification checklist and external review steps](docs/CHECKLIST.md), [research-paper draft](paper/research-draft.md), and [teacher review packet](docs/REVIEW_PACKET.md). The draft is not yet independently reviewed.
@@ -23,6 +31,7 @@ Six more CFD trials, 21 equation-only cases, five sampling areas, nine shock thr
 | What you want to do | Open this |
 |---|---|
 | Understand the project without coding | [Student guide](docs/STUDENT_GUIDE.md) |
+| Explore the flow pictures and saved ParaView project | [ParaView guide](docs/PARAVIEW_GUIDE.md) |
 | Install the tools and repeat the work | [Windows setup and reproduction](docs/SETUP.md) |
 | See what was repeated before publication | [Reproducibility check](docs/REPRODUCIBILITY.md) |
 | Read the results and limits | [Results explained](docs/RESULTS.md) |
@@ -33,10 +42,10 @@ Six more CFD trials, 21 equation-only cases, five sampling areas, nine shock thr
 
 ## Download the two packages
 
-Open the [v1.2.1 release](https://github.com/aeriswghs-ux/su2-wedge-research/releases/tag/v1.2.1).
+Open the [v1.3.0 release](https://github.com/aeriswghs-ux/su2-wedge-research/releases/tag/v1.3.0).
 
-- **SU2_Wedge_Setup_v1.2.1.zip:** current instructions, code, meshes, and settings. It also includes the recovered starter for reference. It does not include completed CFD flow files or the SU2/ParaView programs.
-- **SU2_Wedge_Verified_Results_v1.2.1.zip:** everything in the setup package, plus completed runs, logs, tables, and figures.
+- **SU2_Wedge_Setup_v1.3.0.zip:** current instructions, code, meshes, settings, and derived pictures. It also includes the recovered starter for reference. It does not include completed CFD flow files or the SU2/ParaView programs.
+- **SU2_Wedge_Verified_Results_v1.3.0.zip:** everything in the setup package, plus completed runs and raw flow files needed to reopen the ParaView project and repeat the analysis.
 
 The original starter ZIP was not found. The recovered starter came from its extracted folder. This is stated openly; we do not claim to have recovered the original ZIP byte for byte. The previously delivered verified-results ZIP was checked against all three published final flow files.
 
@@ -60,7 +69,7 @@ From the project folder, after following [SETUP.md](docs/SETUP.md):
 .\.venv\Scripts\python.exe -m wedgeverify.shock --mach 2 --theta 10
 ```
 
-The original suite has 11 checks. It tests the equations and mesh code. Passing it does not replace running SU2.
+The current suite has 18 checks, including the original 11 equation and mesh checks. Passing it does not replace running SU2.
 
 ## Tools and credit
 

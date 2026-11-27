@@ -82,6 +82,16 @@ The additional CFL trials and all per-run results are described in [the checklis
 
 ## 7. Conservation, repeatability and limits
 
+### Additional ParaView inspection
+
+![Pressure and Mach sampled through the shock](../paraview/shock_profiles.png)
+
+ParaView 6.2.1 sampled the saved nodal fields at 801 equally spaced points along x = 1 m, from y = 0.12 m to 0.80 m. Every point was inside the fluid region. The chart shows the neighborhood of the shock. The half-pressure crossing differs from the theoretical height by -2.890, -1.376 and -0.626 mm on the coarse, medium and fine meshes. This is a local position check, not a new fitted shock angle or a convergence-order estimate.
+
+The transition narrows with mesh refinement, while overshoots remain visible. These peaks and dips are numerical artifacts near the discontinuity. Interpolation adds sample points, not physical resolution. Native images, CSV files, an editable state and reproduction commands are in the [ParaView guide](../docs/PARAVIEW_GUIDE.md). The original baseline measurements are unchanged.
+
+### Scope of the evidence
+
 Boundary mass and energy estimates use trapezoidal integration of exported nodal data. They are not the solver's internal face-flux balances. Float32 export and quadrature affect these estimates. Small values support consistency but are not exact conservation proofs.
 
 Repeated runs on the same computer support repeatability under the recorded environment. A second person has not yet repeated the study on another computer. Software versions, configurations, raw logs and data are available for that task.

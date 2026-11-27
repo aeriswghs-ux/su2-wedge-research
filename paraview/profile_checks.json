@@ -1,0 +1,23 @@
+[
+  {
+    "mesh": "coarse",
+    "samples": 801,
+    "half_pressure_y_m": 0.4065583973673665,
+    "theoretical_y_m": 0.40944832528339614,
+    "location_difference_m": -0.0028899279160296554
+  },
+  {
+    "mesh": "medium",
+    "samples": 801,
+    "half_pressure_y_m": 0.4080723480225027,
+    "theoretical_y_m": 0.40944832528339614,
+    "location_difference_m": -0.0013759772608934462
+  },
+  {
+    "mesh": "fine",
+    "samples": 801,
+    "half_pressure_y_m": 0.4088225343217674,
+    "theoretical_y_m": 0.40944832528339614,
+    "location_difference_m": -0.000625790961628736
+  }
+]

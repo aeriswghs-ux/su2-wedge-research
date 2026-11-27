@@ -15,6 +15,8 @@ See [machine-readable comparison](reproduction_check.json) and [saved rerun evid
 
 ## How to check your own repeat
 
+The v1.3.0 ParaView update also regenerated the field images and extracted 801 valid, finite line samples from each baseline file. Loading the saved state recovered 2,400, 9,600 and 38,400 cells. All 18 current Python tests passed. The [ParaView guide](PARAVIEW_GUIDE.md) links the scripts, logs, source fingerprints and known rendering messages. This was checked on the same computer, using ParaView 6.2.1; another-computer verification remains open.
+
 Save your version list and new run folder. Compare your table with `results/verified_measurements.csv`. If differences are larger than expected, first check settings, mesh files, units, software versions, stopping messages, and measurement coordinates.
 
 Do not change your data to force a match. Report differences and investigate them.

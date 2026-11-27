@@ -1,0 +1,95 @@
+(   2.579s) [paraview        ]vtkMatplotlibMathTextUt:655    ERR| vtkMatplotlibMathTextUtilities (00000235165660A0): MaskParser is not initialized!
+(   3.353s) [paraview        ]vtkMatplotlibMathTextUt:655    ERR| vtkMatplotlibMathTextUtilities (00000235165660A0): MaskParser is not initialized!
+(   3.876s) [paraview        ]vtkMatplotlibMathTextUt:1232   ERR| vtkMatplotlibMathTextUtilities (00000235165660A0): MaskParser is not initialized!
+(   4.405s) [paraview        ]vtkMatplotlibMathTextUt:655    ERR| vtkMatplotlibMathTextUtilities (00000235165660A0): MaskParser is not initialized!
+(   4.899s) [paraview        ]vtkMatplotlibMathTextUt:655    ERR| vtkMatplotlibMathTextUtilities (00000235165660A0): MaskParser is not initialized!
+(   5.446s) [paraview        ]vtkMatplotlibMathTextUt:655    ERR| vtkMatplotlibMathTextUtilities (00000235165660A0): MaskParser is not initialized!
+(   6.113s) [paraview        ]vtkMatplotlibMathTextUt:655    ERR| vtkMatplotlibMathTextUtilities (00000235165660A0): MaskParser is not initialized!
+(   6.699s) [paraview        ]vtkMatplotlibMathTextUt:1232   ERR| vtkMatplotlibMathTextUtilities (00000235165660A0): MaskParser is not initialized!
+(   7.335s) [paraview        ]vtkMatplotlibMathTextUt:655    ERR| vtkMatplotlibMathTextUtilities (00000235165660A0): MaskParser is not initialized!
+(   8.237s) [paraview        ]vtkMatplotlibMathTextUt:655    ERR| vtkMatplotlibMathTextUtilities (00000235165660A0): MaskParser is not initialized!
+(   9.182s) [paraview        ]vtkMatplotlibMathTextUt:655    ERR| vtkMatplotlibMathTextUtilities (00000235165660A0): MaskParser is not initialized!
+(   9.918s) [paraview        ]vtkMatplotlibMathTextUt:655    ERR| vtkMatplotlibMathTextUtilities (00000235165660A0): MaskParser is not initialized!
+(  10.450s) [paraview        ]vtkMatplotlibMathTextUt:1232   ERR| vtkMatplotlibMathTextUtilities (00000235165660A0): MaskParser is not initialized!
+(  10.935s) [paraview        ]vtkMatplotlibMathTextUt:655    ERR| vtkMatplotlibMathTextUtilities (00000235165660A0): MaskParser is not initialized!
+(  11.439s) [paraview        ]vtkMatplotlibMathTextUt:655    ERR| vtkMatplotlibMathTextUtilities (00000235165660A0): MaskParser is not initialized!
+(  11.956s) [paraview        ]vtkMatplotlibMathTextUt:655    ERR| vtkMatplotlibMathTextUtilities (00000235165660A0): MaskParser is not initialized!
+(  12.477s) [paraview        ]vtkMatplotlibMathTextUt:655    ERR| vtkMatplotlibMathTextUtilities (00000235165660A0): MaskParser is not initialized!
+(  13.022s) [paraview        ]vtkMatplotlibMathTextUt:1232   ERR| vtkMatplotlibMathTextUtilities (00000235165660A0): MaskParser is not initialized!
+(  13.485s) [paraview        ]vtkMatplotlibMathTextUt:655    ERR| vtkMatplotlibMathTextUtilities (00000235165660A0): MaskParser is not initialized!
+(  14.348s) [paraview        ]vtkMatplotlibMathTextUt:655    ERR| vtkMatplotlibMathTextUtilities (00000235165660A0): MaskParser is not initialized!
+(  14.987s) [paraview        ]vtkMatplotlibMathTextUt:655    ERR| vtkMatplotlibMathTextUtilities (00000235165660A0): MaskParser is not initialized!
+(  15.448s) [paraview        ]vtkMatplotlibMathTextUt:1232   ERR| vtkMatplotlibMathTextUtilities (00000235165660A0): MaskParser is not initialized!
+(  15.962s) [paraview        ]vtkMatplotlibMathTextUt:655    ERR| vtkMatplotlibMathTextUtilities (00000235165660A0): MaskParser is not initialized!
+(  16.431s) [paraview        ]vtkMatplotlibMathTextUt:655    ERR| vtkMatplotlibMathTextUtilities (00000235165660A0): MaskParser is not initialized!
+(  16.901s) [paraview        ]vtkMatplotlibMathTextUt:655    ERR| vtkMatplotlibMathTextUtilities (00000235165660A0): MaskParser is not initialized!
+(  17.460s) [paraview        ]vtkMatplotlibMathTextUt:655    ERR| vtkMatplotlibMathTextUtilities (00000235165660A0): MaskParser is not initialized!
+(  17.932s) [paraview        ]vtkMatplotlibMathTextUt:1232   ERR| vtkMatplotlibMathTextUtilities (00000235165660A0): MaskParser is not initialized!
+(  18.454s) [paraview        ]vtkMatplotlibMathTextUt:655    ERR| vtkMatplotlibMathTextUtilities (00000235165660A0): MaskParser is not initialized!
+(  20.185s) [paraview        ]vtkMatplotlibMathTextUt:655    ERR| vtkMatplotlibMathTextUtilities (00000235165660A0): MaskParser is not initialized!
+(  20.805s) [paraview        ]vtkMatplotlibMathTextUt:655    ERR| vtkMatplotlibMathTextUtilities (00000235165660A0): MaskParser is not initialized!
+(  21.291s) [paraview        ]vtkMatplotlibMathTextUt:1232   ERR| vtkMatplotlibMathTextUtilities (00000235165660A0): MaskParser is not initialized!
+(  21.746s) [paraview        ]vtkMatplotlibMathTextUt:655    ERR| vtkMatplotlibMathTextUtilities (00000235165660A0): MaskParser is not initialized!
+(  22.229s) [paraview        ]vtkMatplotlibMathTextUt:655    ERR| vtkMatplotlibMathTextUtilities (00000235165660A0): MaskParser is not initialized!
+(  22.720s) [paraview        ]vtkMatplotlibMathTextUt:655    ERR| vtkMatplotlibMathTextUtilities (00000235165660A0): MaskParser is not initialized!
+(  23.192s) [paraview        ]vtkMatplotlibMathTextUt:655    ERR| vtkMatplotlibMathTextUtilities (00000235165660A0): MaskParser is not initialized!
+(  23.820s) [paraview        ]vtkMatplotlibMathTextUt:655    ERR| vtkMatplotlibMathTextUtilities (00000235165660A0): MaskParser is not initialized!
+(  24.274s) [paraview        ]vtkMatplotlibMathTextUt:1232   ERR| vtkMatplotlibMathTextUtilities (00000235165660A0): MaskParser is not initialized!
+(  24.750s) [paraview        ]vtkMatplotlibMathTextUt:655    ERR| vtkMatplotlibMathTextUtilities (00000235165660A0): MaskParser is not initialized!
+(  25.290s) [paraview        ]vtkMatplotlibMathTextUt:655    ERR| vtkMatplotlibMathTextUtilities (00000235165660A0): MaskParser is not initialized!
+(  25.780s) [paraview        ]vtkMatplotlibMathTextUt:655    ERR| vtkMatplotlibMathTextUtilities (00000235165660A0): MaskParser is not initialized!
+(  26.279s) [paraview        ]vtkMatplotlibMathTextUt:655    ERR| vtkMatplotlibMathTextUtilities (00000235165660A0): MaskParser is not initialized!
+(  26.921s) [paraview        ]vtkMatplotlibMathTextUt:655    ERR| vtkMatplotlibMathTextUtilities (00000235165660A0): MaskParser is not initialized!
+(  27.404s) [paraview        ]vtkMatplotlibMathTextUt:1232   ERR| vtkMatplotlibMathTextUtilities (00000235165660A0): MaskParser is not initialized!
+(  27.899s) [paraview        ]vtkMatplotlibMathTextUt:655    ERR| vtkMatplotlibMathTextUtilities (00000235165660A0): MaskParser is not initialized!
+(  28.422s) [paraview        ]vtkMatplotlibMathTextUt:655    ERR| vtkMatplotlibMathTextUtilities (00000235165660A0): MaskParser is not initialized!
+(  28.914s) [paraview        ]vtkMatplotlibMathTextUt:655    ERR| vtkMatplotlibMathTextUtilities (00000235165660A0): MaskParser is not initialized!
+{
+  "software": "ParaView 6.2.1",
+  "source": "Existing SU2 baseline fields; no new simulations",
+  "line": {
+    "start": [
+      1,
+      0.12,
+      0
+    ],
+    "end": [
+      1,
+      0.8,
+      0
+    ],
+    "segments": 800
+  },
+  "inputs": {
+    "coarse": {
+      "sha256": "92a8e8868b82e7e4beaa7ad46e9f261fb794b30f6152c44cc2975256f659ad6f",
+      "points": 2501,
+      "valid_profile_points": 801
+    },
+    "medium": {
+      "sha256": "447ff46835fde40df9eb8d46e9ac8b2f484465c80fb877b1aa199fa06e8a8ca5",
+      "points": 9801,
+      "valid_profile_points": 801
+    },
+    "fine": {
+      "sha256": "0869681d23e3e7b765e236fb04c073b8b48d0f3cdc99882c20ebc0f2ce1da29c",
+      "points": 38801,
+      "valid_profile_points": 801
+    }
+  },
+  "color_ranges": {
+    "Mach": [
+      1.606709599494934,
+      2.033146619796753
+    ],
+    "Pressure": [
+      95044.9296875,
+      179585.265625
+    ],
+    "Density": [
+      1.1195497512817383,
+      1.7565820217132568
+    ]
+  }
+}
+(  29.221s) [paraview        ]vtkInitializationHelper:604   WARN| Saving settings file to '[USER]\AppData\Roaming\ParaView\ParaView-UserSettings.json' failed

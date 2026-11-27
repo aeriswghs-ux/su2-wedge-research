@@ -1,0 +1,2 @@
+{'coarse baseline': 2400, 'fine baseline': 38400, 'medium baseline': 9600}
+(   4.681s) [paraview        ]vtkInitializationHelper:604   WARN| Saving settings file to '[USER]\AppData\Roaming\ParaView\ParaView-UserSettings.json' failed

@@ -4,7 +4,7 @@ You can read the results without installing anything. To repeat the calculations
 
 ## 1. Get the project
 
-Download a ZIP from the [release page](https://github.com/aeriswghs-ux/su2-wedge-research/releases/tag/v1.2.1), then choose **Extract All** in File Explorer. The results ZIP is best for repeating the analysis. Keep the extracted project in a short path, such as a folder called `wedge` inside your Documents folder.
+Download a ZIP from the [release page](https://github.com/aeriswghs-ux/su2-wedge-research/releases/tag/v1.3.0), then choose **Extract All** in File Explorer. The results ZIP is best for repeating the analysis. Keep the extracted project in a short path, such as a folder called `wedge` inside your Documents folder.
 
 Open PowerShell in the extracted project folder. You should see `README.md`, `scripts`, and `meshes` there.
 
@@ -71,6 +71,8 @@ For your new run:
 ```
 
 ## 7. View the shock in ParaView
+
+For the ready-made views, three-mesh comparison and reproducible line samples, follow the [ParaView guide](PARAVIEW_GUIDE.md). It includes commands to rebuild the pictures and verify the saved state.
 
 Get [ParaView from its official site](https://www.paraview.org/download/). The recorded run used the non-MPI Windows 6.2.1 portable ZIP. Extract it into a short path and open `bin/paraview.exe`.
 

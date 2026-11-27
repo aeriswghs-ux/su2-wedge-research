@@ -4,7 +4,7 @@ import hashlib
 import zipfile
 
 ROOT=Path(__file__).resolve().parents[1]
-VERSION='1.2.1'
+VERSION='1.3.0'
 DIST=ROOT/'dist'
 DIST.mkdir(exist_ok=True)
 EXCLUDED={'.git','.venv','__pycache__','.pytest_cache','dist','runs','tools'}

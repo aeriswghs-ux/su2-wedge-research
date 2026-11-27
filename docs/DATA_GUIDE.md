@@ -22,6 +22,7 @@
 | `results/*_shock_points.csv` | Measured shock locations used in the line fit. |
 | `results/paraview_readback.json` | Independent VTK-reader counts and field ranges. |
 | `figures/verified_*.png` | Figures made from the saved runs. |
+| `paraview/` | Native field pictures, an editable state, line-sample CSV files, source fingerprints and execution logs. See the [ParaView guide](PARAVIEW_GUIDE.md). |
 | `archive/starter/` | Recovered starting project, before this session's SU2 runs. |
 | `runs/` | Your new runs; created locally and excluded from Git by default. |
 

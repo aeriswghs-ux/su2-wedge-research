@@ -1,0 +1,28 @@
+Traceback (most recent call last):
+  File "[WORKSPACE]\tools\ParaView\ParaView-6.2.1-Windows-Python3.12-msvc2017-AMD64\bin\lib\site-packages\paraview\servermanager.py", line 499, in __setattr__
+    setter = getattr(self.__class__, name)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: type object 'UnstructuredGridRepresentation' has no attribute 'Lighting'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "[WORKSPACE]\tools\ParaView\ParaView-6.2.1-Windows-Python3.12-msvc2017-AMD64\bin\lib\site-packages\paraview\servermanager.py", line 505, in __setattr__
+    _bc.setattr(self, name, value)
+  File "[WORKSPACE]\tools\ParaView\ParaView-6.2.1-Windows-Python3.12-msvc2017-AMD64\bin\lib\site-packages\paraview\_backwardscompatibilityhelper.py", line 719, in setattr
+    raise AttributeError()
+AttributeError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "[WORKSPACE]\publication\su2-wedge-research\scripts\paraview_visuals.py", line 48, in <module>
+    view,display=view_field(readers['fine'],field,f'{field} | Mach 2, 10-degree ramp | 38,400 cells')
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "[WORKSPACE]\publication\su2-wedge-research\scripts\paraview_visuals.py", line 28, in view_field
+    display=Show(reader,view);display.Representation='Surface';display.Lighting=0
+                                                               ^^^^^^^^^^^^^^^^
+  File "[WORKSPACE]\tools\ParaView\ParaView-6.2.1-Windows-Python3.12-msvc2017-AMD64\bin\lib\site-packages\paraview\servermanager.py", line 512, in __setattr__
+    raise AttributeError("Attribute %s does not exist. " % name +
+AttributeError: Attribute Lighting does not exist.  This class does not allow addition of new attributes to avoid mistakes due to typos. Use add_attribute() if you really want to add this attribute.
+(   8.318s) [paraview        ]vtkInitializationHelper:604   WARN| Saving settings file to '[USER]\AppData\Roaming\ParaView\ParaView-UserSettings.json' failed

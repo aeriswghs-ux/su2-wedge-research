@@ -1,5 +1,14 @@
 # Changes
 
+## v1.3.0
+
+- Added native ParaView images for Mach, pressure and density, with fixed color ranges across meshes.
+- Added a three-mesh pressure comparison, sampling-location picture and editable portable state.
+- Extracted 801 valid line samples per mesh and compared pressure and Mach profiles with theory.
+- Added plain-English instructions, source fingerprints, execution logs and a saved-state load check.
+- Retained numerical overshoots and rendering messages with explanations. All 18 existing tests pass.
+- Uses existing baseline flow files; no new solver runs or changes to the original measurements.
+
 ## v1.2.1
 
 - Described the work consistently as AI- and computer-assisted numerical verification.
