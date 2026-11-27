@@ -1,12 +1,19 @@
 # Changes
 
+## v1.2.1
+
+- Described the work consistently as AI- and computer-assisted numerical verification.
+- Removed student explanation as a condition of the research checklist; learning exercises remain optional.
+- Retained independent-review status, reproducibility limits and all numerical evidence.
+- Documentation update only; no simulation results changed.
+
 ## v1.2.0
 
 - Completed 12 fresh solver runs across all meshes, with matched CFL 5 and CFL 10 repeats.
 - Added a pressure-gradient shock detector, midpoint/refined comparisons, and synthetic unit checks.
 - Reported every sampling-area error and retained the non-monotonic detector result.
 - Added a research-paper draft, evidence-linked checklist and an unsent teacher review packet.
-- Full suite: 18 tests passed. Student explanation, independent repeat and mentor review remain open.
+- Full suite: 18 tests passed. Independent repeat and technical review remain open; learning exercises are separate from numerical verification.
 
 ## v1.1.0
 

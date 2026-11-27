@@ -12,12 +12,12 @@ Questions for the reviewer:
 4. Do the five measurement areas and two shock methods expose the important uncertainties?
 5. Is the distinction between verification and validation clear?
 6. Does the paper avoid overstating the CFL trials, conservation estimates and timing test?
-7. Can another student reproduce a run from the setup guide?
-8. Can the student explain the work without reading the draft word for word?
+7. Can another researcher reproduce a run from the setup guide?
+8. Are the AI assistance, evidence and limitations stated accurately?
 
 Record the reviewer's name only with their permission. Record the date, findings, requested changes, and the project version reviewed. Keep unresolved findings open.
 
-## Student explanation checklist
+## Optional learning exercises
 
 - [ ] Explain why the shock angle is different from the ramp angle.
 - [ ] Calculate one percentage error by hand.
@@ -25,4 +25,4 @@ Record the reviewer's name only with their permission. Record the date, findings
 - [ ] Identify one result that does not improve steadily with refinement.
 - [ ] Explain which tasks used AI and what you checked yourself.
 
-These boxes require the student's own work. They are intentionally not marked complete by the assistant.
+These are optional learning exercises. They are not prerequisites for the study's recorded AI- and computer-assisted numerical verification.

@@ -1,8 +1,8 @@
-# Checklist: completed work and remaining human steps
+# Checklist: completed verification and external review steps
 
 Status: November 27, 2026. This records what was actually done, not just planned.
 
-- [x] Prepared plain-English explanations and a student worksheet.
+- [x] Prepared plain-English explanations and optional learning exercises.
 - [x] Repeated the automated checks: 18 tests passed.
 - [x] Completed four fresh three-mesh studies: 12 successful, converged simulations.
 - [x] Compared all five measurement areas, including the larger errors.
@@ -10,9 +10,8 @@ Status: November 27, 2026. This records what was actually done, not just planned
 - [x] Added a pressure-gradient detector and compared both midpoint and refined versions with the pressure-crossing method.
 - [x] Prepared a research-paper draft with methods, data, sources, limits and AI disclosure.
 - [x] Prepared a teacher/mentor review packet.
-- [ ] Student explains the work independently, using their own words.
 - [ ] Another person repeats the study on a different computer.
-- [ ] A teacher or mentor reviews the paper and the student addresses their findings.
+- [ ] An independent reviewer checks the paper and the research team addresses their findings.
 
 The repeat runs used the same computer and software environment. They do not satisfy independent reproduction. The review packet has not been sent; no recipient was supplied and no review has occurred.
 
@@ -49,7 +48,7 @@ The parabolic gradient detector gives errors of 0.007786°, 0.002418°, and 0.00
 ## Files to use next
 
 - [Research draft](../paper/research-draft.md)
-- [Review packet and student worksheet](REVIEW_PACKET.md)
+- [Review packet and optional learning exercises](REVIEW_PACKET.md)
 - [All trial records](../datasets/v12-checklist/trial_comparison.csv)
 - [All sampling-area errors](../datasets/v12-checklist/all_box_errors.csv)
 - [Detector comparison](../datasets/v12-checklist/detector_comparison.csv)

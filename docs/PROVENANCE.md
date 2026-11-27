@@ -26,4 +26,4 @@ Some original hash lists describe files before these documentation and privacy e
 
 The verified run date is November 26, 2026 in America/Chicago. A GitHub upload timestamp records publication, which is a separate event.
 
-AI assistance was used for setup, code, execution, analysis, and writing. The published record supports the stated numerical checks. It does not mean a student has independently derived every equation or that a mentor has reviewed the study. Those remain explicit learning and review tasks.
+This is AI- and computer-assisted numerical verification. The published record supports the stated numerical checks through actual solver output, automated tests and analytical comparisons. Independent reproduction and technical review remain open. Personal learning exercises are optional educational material, not conditions for the recorded verification results.

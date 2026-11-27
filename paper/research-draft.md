@@ -1,8 +1,8 @@
 # Checking SU2 against shock-wave equations
 
-**Working research paper — AI-assisted draft, not peer reviewed.**
+**AI- and computer-assisted numerical verification study — working paper.**
 
-The student must review this draft, explain the work in their own words, and add their own account of what they learned. This document does not claim that a teacher has approved the study.
+The study's evidence consists of saved solver output, automated checks and comparisons with analytical shock relations. The verification findings are supported by these recorded checks. Independent peer review has not been completed.
 
 ## Abstract
 
@@ -100,4 +100,5 @@ The next independent check is a repeat by another person on another computer. A 
 - NASA Glenn Research Center, [Oblique Shock Waves](https://www.grc.nasa.gov/www/k-12/airplane/oblique.html). Consulted for the shock relations and assumptions.
 - [Project repository](https://github.com/aeriswghs-ux/su2-wedge-research), with versioned data, code and execution records.
 
-AI assistance was used for code, execution, analysis and writing. This draft is not the student's personal account of learning and is not a mentor review. The student must check the content and provide their own explanation and acknowledgments.
+AI and computer tools assisted with code, execution, analysis and writing. The methods and raw evidence are supplied for inspection and reproduction. The numerical findings apply to the stated model and settings; they are not a universal mathematical proof or evidence of physical validation.
+

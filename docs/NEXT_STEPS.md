@@ -1,6 +1,6 @@
 # What to do next
 
-**Update:** The assistant has completed the technical work recorded in [CHECKLIST.md](CHECKLIST.md). Use that page for current status. The steps below remain the learning and review plan; student understanding, independent reproduction and mentor review still require people to complete them.
+**Update:** The assistant has completed the technical work recorded in [CHECKLIST.md](CHECKLIST.md). Use that page for current status. The study is an AI- and computer-assisted numerical verification. The steps below are optional learning activities and further scientific checks. Independent reproduction and technical review remain open.
 
 Work through these in order. Finish the explanation and repeatability steps before adding a harder flow case.
 
@@ -38,7 +38,7 @@ With a teacher or mentor, change one feature at a time: boundary distance, anoth
 
 **Done when:** you know whether the main conclusion survives these changes. Do not claim a formal order of accuracy unless the data and assumptions support it.
 
-## 6. Write the paper in your own words
+## 6. Refine the research paper
 
 Use this outline:
 

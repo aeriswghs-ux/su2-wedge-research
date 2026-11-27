@@ -4,7 +4,7 @@ import hashlib
 import zipfile
 
 ROOT=Path(__file__).resolve().parents[1]
-VERSION='1.2.0'
+VERSION='1.2.1'
 DIST=ROOT/'dist'
 DIST.mkdir(exist_ok=True)
 EXCLUDED={'.git','.venv','__pycache__','.pytest_cache','dist','runs','tools'}
@@ -26,6 +26,7 @@ for label in ['Setup','Verified_Results']:
         z.writestr(info,'\n'.join(hashes)+'\n')
     print(name,(DIST/name).stat().st_size,'bytes')
 (DIST/'SHA256SUMS.txt').write_text(''.join(hashlib.sha256(p.read_bytes()).hexdigest()+'  '+p.name+'\n' for p in sorted(DIST.glob(f'*v{VERSION}.zip'))))
+
 
 
 

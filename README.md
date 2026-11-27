@@ -12,7 +12,7 @@ The red box is the main measurement area. The dashed line is the theoretical sho
 
 ## Checklist progress — v1.2.0
 
-Completed 12 fresh simulations, compared all five measurement areas, and checked a second shock detector. The full suite now passes 18 tests. Read the [completed checklist and remaining human steps](docs/CHECKLIST.md), [research-paper draft](paper/research-draft.md), and [teacher review packet](docs/REVIEW_PACKET.md). The draft is not yet independently reviewed.
+Completed 12 fresh simulations, compared all five measurement areas, and checked a second shock detector. The full suite now passes 18 tests. Read the [completed verification checklist and external review steps](docs/CHECKLIST.md), [research-paper draft](paper/research-draft.md), and [teacher review packet](docs/REVIEW_PACKET.md). The draft is not yet independently reviewed.
 
 ## Earlier update: v1.1.0
 
@@ -33,10 +33,10 @@ Six more CFD trials, 21 equation-only cases, five sampling areas, nine shock thr
 
 ## Download the two packages
 
-Open the [v1.2.0 release](https://github.com/aeriswghs-ux/su2-wedge-research/releases/tag/v1.2.0).
+Open the [v1.2.1 release](https://github.com/aeriswghs-ux/su2-wedge-research/releases/tag/v1.2.1).
 
-- **SU2_Wedge_Setup_v1.2.0.zip:** current instructions, code, meshes, and settings. It also includes the recovered starter for reference. It does not include completed CFD flow files or the SU2/ParaView programs.
-- **SU2_Wedge_Verified_Results_v1.2.0.zip:** everything in the setup package, plus completed runs, logs, tables, and figures.
+- **SU2_Wedge_Setup_v1.2.1.zip:** current instructions, code, meshes, and settings. It also includes the recovered starter for reference. It does not include completed CFD flow files or the SU2/ParaView programs.
+- **SU2_Wedge_Verified_Results_v1.2.1.zip:** everything in the setup package, plus completed runs, logs, tables, and figures.
 
 The original starter ZIP was not found. The recovered starter came from its extracted folder. This is stated openly; we do not claim to have recovered the original ZIP byte for byte. The previously delivered verified-results ZIP was checked against all three published final flow files.
 
@@ -66,6 +66,7 @@ The original suite has 11 checks. It tests the equations and mesh code. Passing 
 
 The recorded simulation used Python 3.12.10, SU2 8.6.0, and ParaView 6.2.1. The Python package versions are recorded in [requirements-lock.txt](requirements-lock.txt). SU2 and ParaView are downloaded separately from their official sites.
 
-This project used AI help to prepare code, run software, analyze results, and write documentation. It is a learning project, not a peer-reviewed paper. The student should explain and check the method before presenting it. See [sources](docs/REFERENCES.md) and [reuse notes](REUSE.md).
+This is an **AI- and computer-assisted numerical verification study**. AI assisted with code, execution, analysis and documentation. Saved simulations, automated tests and comparisons with established equations provide the evidence. Independent peer review remains a separate next step. See [sources](docs/REFERENCES.md) and [reuse notes](REUSE.md).
+
 
 
