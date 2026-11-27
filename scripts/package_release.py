@@ -20,6 +20,8 @@ for label in ['Setup','Verified_Results']:
             info=zipfile.ZipInfo('su2-wedge-research/'+relative,date_time=(2026,11,26,0,0,0))
             info.compress_type=zipfile.ZIP_DEFLATED
             z.writestr(info,payload)
-        z.writestr('su2-wedge-research/MANIFEST.sha256','\n'.join(hashes)+'\n')
+        info=zipfile.ZipInfo('su2-wedge-research/MANIFEST.sha256',date_time=(2026,11,26,0,0,0))
+        info.compress_type=zipfile.ZIP_DEFLATED
+        z.writestr(info,'\n'.join(hashes)+'\n')
     print(name,(DIST/name).stat().st_size,'bytes')
 (DIST/'SHA256SUMS.txt').write_text(''.join(hashlib.sha256(p.read_bytes()).hexdigest()+'  '+p.name+'\n' for p in sorted(DIST.glob('*.zip'))))
