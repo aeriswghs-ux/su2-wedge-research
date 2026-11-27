@@ -4,13 +4,13 @@ import hashlib
 import zipfile
 
 ROOT=Path(__file__).resolve().parents[1]
-VERSION='1.1.0'
+VERSION='1.2.0'
 DIST=ROOT/'dist'
 DIST.mkdir(exist_ok=True)
 EXCLUDED={'.git','.venv','__pycache__','.pytest_cache','dist','runs','tools'}
 files=sorted(p for p in ROOT.rglob('*') if p.is_file() and not any(part in EXCLUDED for part in p.relative_to(ROOT).parts) and p.suffix!='.pyc')
 for label in ['Setup','Verified_Results']:
-    selected=[p for p in files if label=='Verified_Results' or not p.relative_to(ROOT).as_posix().startswith(('results/raw/', 'datasets/v1.1/trial_'))]
+    selected=[p for p in files if label=='Verified_Results' or not p.relative_to(ROOT).as_posix().startswith(('results/raw/', 'datasets/v1.1/trial_', 'datasets/v12-checklist/batch_'))]
     name=f'SU2_Wedge_{label}_v{VERSION}.zip'
     hashes=[]
     with zipfile.ZipFile(DIST/name,'w',compression=zipfile.ZIP_DEFLATED,compresslevel=9) as z:
@@ -26,5 +26,6 @@ for label in ['Setup','Verified_Results']:
         z.writestr(info,'\n'.join(hashes)+'\n')
     print(name,(DIST/name).stat().st_size,'bytes')
 (DIST/'SHA256SUMS.txt').write_text(''.join(hashlib.sha256(p.read_bytes()).hexdigest()+'  '+p.name+'\n' for p in sorted(DIST.glob(f'*v{VERSION}.zip'))))
+
 
 

@@ -1,0 +1,22 @@
+[
+  {
+    "batch": 1,
+    "cfl": 5,
+    "exit_code": 0
+  },
+  {
+    "batch": 2,
+    "cfl": 10,
+    "exit_code": 0
+  },
+  {
+    "batch": 3,
+    "cfl": 10,
+    "exit_code": 0
+  },
+  {
+    "batch": 4,
+    "cfl": 5,
+    "exit_code": 0
+  }
+]

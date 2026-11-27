@@ -7,6 +7,7 @@ import os
 import shutil
 import subprocess
 import sys
+import time
 from datetime import datetime, timezone
 
 def main():
@@ -14,6 +15,7 @@ def main():
     parser.add_argument('--su2',required=True,help='Full path to SU2_CFD.exe')
     parser.add_argument('--name',required=True,help='A new folder name, for example my-first-run')
     parser.add_argument('--threads',type=int,default=4)
+    parser.add_argument('--cfl',type=float,choices=[2,5,10],default=5,help='Numerical step setting; baseline is 5')
     args=parser.parse_args()
     if not args.name or any(c not in 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789-_' for c in args.name):
         parser.error('Use only letters, numbers, hyphens and underscores in the run name.')
@@ -25,19 +27,24 @@ def main():
     if run.exists(): parser.error('That run already exists. Choose a new name to protect its files.')
     (run/'results/raw').mkdir(parents=True)
     for folder in ['cfg','meshes']: shutil.copytree(root/folder,run/folder)
+    for config in (run/'cfg').glob('wedge_*.cfg'):
+        config.write_text(config.read_text().replace('CFL_NUMBER= 5.0',f'CFL_NUMBER= {args.cfl:.1f}'))
     manifest={'started_utc':datetime.now(timezone.utc).isoformat(),'threads':args.threads,
               'solver_sha256':hashlib.sha256(executable.read_bytes()).hexdigest(),
               'python':sys.version,'runs':[]}
+    manifest['cfl']=args.cfl
     env=os.environ.copy();env['OMP_NUM_THREADS']=str(args.threads)
     for level in ['coarse','medium','fine']:
         command=[str(executable),f'cfg/wedge_{level}.cfg']
         print(f'Running {level}. Log: runs/{args.name}/results/raw/{level}.log',flush=True)
+        started=time.perf_counter()
         with (run/f'results/raw/{level}.log').open('w',encoding='utf-8') as log:
             result=subprocess.run(command,cwd=run,env=env,stdout=log,stderr=subprocess.STDOUT)
+        seconds=time.perf_counter()-started
         (run/f'results/raw/{level}.exitcode').write_text(str(result.returncode)+'\n')
         text=(run/f'results/raw/{level}.log').read_text(errors='replace')
         converged='All convergence criteria satisfied.' in text
-        manifest['runs'].append({'mesh':level,'exit_code':result.returncode,'converged':converged})
+        manifest['runs'].append({'mesh':level,'exit_code':result.returncode,'converged':converged,'seconds':seconds})
         (run/'run_manifest.json').write_text(json.dumps(manifest,indent=2)+'\n')
         if result.returncode!=0 or not converged:
             raise SystemExit(f'{level} did not meet the checks. Read its log before continuing.')

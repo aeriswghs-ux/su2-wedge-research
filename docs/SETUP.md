@@ -4,7 +4,7 @@ You can read the results without installing anything. To repeat the calculations
 
 ## 1. Get the project
 
-Download a ZIP from the [release page](https://github.com/aeriswghs-ux/su2-wedge-research/releases/tag/v1.1.0), then choose **Extract All** in File Explorer. The results ZIP is best for repeating the analysis. Keep the extracted project in a short path, such as a folder called `wedge` inside your Documents folder.
+Download a ZIP from the [release page](https://github.com/aeriswghs-ux/su2-wedge-research/releases/tag/v1.2.0), then choose **Extract All** in File Explorer. The results ZIP is best for repeating the analysis. Keep the extracted project in a short path, such as a folder called `wedge` inside your Documents folder.
 
 Open PowerShell in the extracted project folder. You should see `README.md`, `scripts`, and `meshes` there.
 
@@ -101,4 +101,5 @@ This checks the reference files. It is optional and is separate from the ordinar
 | No flow file for analysis | Use the results package or complete the simulations first. |
 
 For a useful help request, include your versions, the command, and the relevant run log. Remove private file paths before posting it publicly.
+
 

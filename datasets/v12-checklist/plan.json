@@ -1,0 +1,15 @@
+{
+  "cfl_order": [
+    5,
+    10,
+    10,
+    5
+  ],
+  "meshes": [
+    "coarse",
+    "medium",
+    "fine"
+  ],
+  "threads": 4,
+  "purpose": "Fresh full repeats and matched CFL controls; preserve all attempts; do not change baseline defaults."
+}

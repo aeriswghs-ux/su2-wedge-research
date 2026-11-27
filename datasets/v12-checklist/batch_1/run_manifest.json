@@ -1,0 +1,27 @@
+{
+  "started_utc": "2026-11-27T07:46:54.182574+00:00",
+  "threads": 4,
+  "solver_sha256": "01f22d0c9de2e9a5feea666f67adf3957f503d2e14ca6fd998a9a28a11417bf7",
+  "python": "3.12.10 (tags/v3.12.10:0cc8128, Apr  8 2025, 12:21:36) [MSC v.1943 64 bit (AMD64)]",
+  "runs": [
+    {
+      "mesh": "coarse",
+      "exit_code": 0,
+      "converged": true,
+      "seconds": 1.9249643000002834
+    },
+    {
+      "mesh": "medium",
+      "exit_code": 0,
+      "converged": true,
+      "seconds": 6.1068970000014815
+    },
+    {
+      "mesh": "fine",
+      "exit_code": 0,
+      "converged": true,
+      "seconds": 39.564900899997156
+    }
+  ],
+  "cfl": 5.0
+}

@@ -1,5 +1,7 @@
 # What to do next
 
+**Update:** The assistant has completed the technical work recorded in [CHECKLIST.md](CHECKLIST.md). Use that page for current status. The steps below remain the learning and review plan; student understanding, independent reproduction and mentor review still require people to complete them.
+
 Work through these in order. Finish the explanation and repeatability steps before adding a harder flow case.
 
 ## 1. Understand what is already done

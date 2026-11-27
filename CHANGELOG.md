@@ -1,5 +1,13 @@
 # Changes
 
+## v1.2.0
+
+- Completed 12 fresh solver runs across all meshes, with matched CFL 5 and CFL 10 repeats.
+- Added a pressure-gradient shock detector, midpoint/refined comparisons, and synthetic unit checks.
+- Reported every sampling-area error and retained the non-monotonic detector result.
+- Added a research-paper draft, evidence-linked checklist and an unsent teacher review packet.
+- Full suite: 18 tests passed. Student explanation, independent repeat and mentor review remain open.
+
 ## v1.1.0
 
 - Added six converged medium-mesh CFD trials with two repeats per CFL setting.
