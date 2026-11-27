@@ -1,0 +1,8 @@
+__pycache__/
+.pytest_cache/
+*.pyc
+.venv/
+runs/
+tools/
+dist/
+# Raw reference logs and flow files are deliberately tracked.

@@ -1,0 +1,66 @@
+{
+  "coarse": {
+    "points": 2501,
+    "cells": 2400,
+    "arrays": {
+      "Pressure": {
+        "min": 95062.4140625,
+        "max": 179272.265625,
+        "finite": true
+      },
+      "Density": {
+        "min": 1.1197532415390015,
+        "max": 1.754379153251648,
+        "finite": true
+      },
+      "Mach": {
+        "min": 1.6078529357910156,
+        "max": 2.033146619796753,
+        "finite": true
+      }
+    }
+  },
+  "medium": {
+    "points": 9801,
+    "cells": 9600,
+    "arrays": {
+      "Pressure": {
+        "min": 95088.953125,
+        "max": 179585.265625,
+        "finite": true
+      },
+      "Density": {
+        "min": 1.1199744939804077,
+        "max": 1.7565820217132568,
+        "finite": true
+      },
+      "Mach": {
+        "min": 1.606709599494934,
+        "max": 2.0325844287872314,
+        "finite": true
+      }
+    }
+  },
+  "fine": {
+    "points": 38801,
+    "cells": 38400,
+    "arrays": {
+      "Pressure": {
+        "min": 95044.9296875,
+        "max": 178639.203125,
+        "finite": true
+      },
+      "Density": {
+        "min": 1.1195497512817383,
+        "max": 1.7498964071273804,
+        "finite": true
+      },
+      "Mach": {
+        "min": 1.6099069118499756,
+        "max": 2.0326039791107178,
+        "finite": true
+      }
+    }
+  }
+}
+(   5.068s) [paraview        ]vtkInitializationHelper:604   WARN| Saving settings file to '[USER]\AppData\Roaming\ParaView\ParaView-UserSettings.json' failed

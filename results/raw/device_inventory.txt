@@ -1,0 +1,7 @@
+
+Name   : python.exe
+Source : [USER]\AppData\Local\Programs\Python\Python312\python.exe
+
+Name   : py.exe
+Source : [USER]\AppData\Local\Programs\Python\Launcher\py.exe
+

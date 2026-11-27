@@ -1,0 +1,8 @@
+{
+  "mach_1": 2.0,
+  "theta_deg": 24.0,
+  "gamma": 1.4,
+  "status": "NO_ATTACHED_SOLUTION",
+  "reason": "NO_ATTACHED_SOLUTION: theta=24.000000 deg exceeds theta_max=22.973532 deg for M1=2",
+  "theta_max_deg": 22.973531760937945
+}

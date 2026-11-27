@@ -1,0 +1,4 @@
+mesh,cells,h_m,shock_angle_deg,p2_p1,rho2_rho1,mach_2
+coarse,2400,0.0242541793,,,,
+medium,9600,0.0121270896,,,,
+fine,38400,0.0060635448,,,,

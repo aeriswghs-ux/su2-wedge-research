@@ -1,0 +1,35 @@
+{
+  "fresh_environment": true,
+  "tests_passed": 11,
+  "new_su2_runs": 3,
+  "comparisons": [
+    {
+      "mesh": "coarse",
+      "absolute_differences": {
+        "shock_angle_deg": 0.0,
+        "p2_p1": 0.0,
+        "rho2_rho1": 0.0,
+        "mach_2": 0.0
+      }
+    },
+    {
+      "mesh": "medium",
+      "absolute_differences": {
+        "shock_angle_deg": 0.0,
+        "p2_p1": 0.0,
+        "rho2_rho1": 0.0,
+        "mach_2": 0.0
+      }
+    },
+    {
+      "mesh": "fine",
+      "absolute_differences": {
+        "shock_angle_deg": 0.0,
+        "p2_p1": 0.0,
+        "rho2_rho1": 0.0,
+        "mach_2": 0.0
+      }
+    }
+  ],
+  "broken_current_document_links": []
+}
