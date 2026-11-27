@@ -1,5 +1,14 @@
 # Changes
 
+## v1.1.0
+
+- Added six converged medium-mesh CFD trials with two repeats per CFL setting.
+- Added 21 labeled equation-only cases, 15 box measurements and 27 threshold fits.
+- Shared and accelerated shock detection and cell averaging; the original reference measurements remain unchanged.
+- Added five regression and edge-case checks (16 tests in the full package).
+- Published timing samples and a plain-English expanded-study guide.
+- Kept v1.0.0 available as the original research release.
+
 ## v1.0.0
 
 - Published the recovered setup material and three actual SU2 runs.

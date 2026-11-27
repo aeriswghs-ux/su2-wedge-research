@@ -7,6 +7,7 @@ matplotlib.use('Agg')
 import matplotlib.pyplot as plt
 from matplotlib.collections import PolyCollection
 from scripts.inspect_flow import read_vtu
+from wedgeverify.measure import pressure_crossings, cell_values, box_average
 from wedgeverify.shock import solve_weak_shock
 
 import argparse
@@ -23,43 +24,24 @@ rho1=100000/(287.058*300)
 rows=[]
 figres, axres=plt.subplots(figsize=(8,5))
 
-def shock_fit(d, fraction):
-    x,y=d['Points'][:,:2].T
-    p=d['Pressure']
-    threshold=100000*(1+fraction*(theory['p2_p1']-1))
-    points=[]
-    for xx in np.unique(x):
-        if not .8<=xx<=1.25: continue
-        ids=np.flatnonzero(x==xx); ids=ids[np.argsort(y[ids])]
-        for a,b in zip(ids[:-1],ids[1:]):
-            if p[a]>=threshold and p[b]<threshold:
-                yy=y[a]+(threshold-p[a])*(y[b]-y[a])/(p[b]-p[a])
-                points.append((xx,yy))
-    points=np.array(points)
-    if len(points)<5: raise ValueError('Too few shock crossings')
-    slope,intercept=np.polyfit(points[:,0]-.5,points[:,1],1)
-    return float(np.degrees(np.arctan(slope))),float(intercept),points
-
 for level in ['coarse','medium','fine']:
     d=read_vtu(RAW/f'{level}_flow.vtu')
     xy=d['Points'][:,:2].astype(float)
     cells=d['connectivity'].reshape(-1,4)
-    poly=xy[cells]; centers=poly.mean(axis=1)
-    area=.5*np.abs(np.sum(poly[:,:,0]*np.roll(poly[:,:,1],-1,axis=1)-poly[:,:,1]*np.roll(poly[:,:,0],-1,axis=1),axis=1))
-    # Same physical rectangle on every mesh, away from tip, shock, wall and outlet.
+    poly, centers, area, fields = cell_values(d)
+    means, region_count = box_average(centers, area, fields, (.85, 1.15, .16, .22))
     region=(centers[:,0]>=.85)&(centers[:,0]<=1.15)&(centers[:,1]>=.16)&(centers[:,1]<=.22)
-    means={k:float(np.average(d[k][cells].mean(axis=1)[region],weights=area[region])) for k in ['Pressure','Density','Mach']}
-    beta,intercept,points=shock_fit(d,.5)
+    fit40, (beta, intercept, points), fit60 = pressure_crossings(d, theory['p2_p1'])
     row={'mesh':level,'cells':len(cells),'h_m':float(np.sqrt(area.sum()/len(cells))),
          'shock_angle_deg':beta,'p2_p1':means['Pressure']/100000,'rho2_rho1':means['Density']/rho1,'mach_2':means['Mach'],
-         'shock_intercept_m':intercept,'beta_threshold40_deg':shock_fit(d,.4)[0],'beta_threshold60_deg':shock_fit(d,.6)[0],
+         'shock_intercept_m':intercept,'beta_threshold40_deg':fit40[0],'beta_threshold60_deg':fit60[0],
          'region_cells':int(region.sum())}
     for key in ['shock_angle_deg','p2_p1','rho2_rho1','mach_2']:
         row[key+'_abs_error']=abs(row[key]-theory[key])
         row[key+'_rel_error_pct']=100*abs(row[key]-theory[key])/abs(theory[key])
-    alternate=(centers[:,0]>=.8)&(centers[:,0]<=1.2)&(centers[:,1]>=.12)&(centers[:,1]<=.20)
+    alternate, _ = box_average(centers, area, fields, (.8, 1.2, .12, .20))
     for field,key,scale in [('Pressure','p2_p1',100000),('Density','rho2_rho1',rho1),('Mach','mach_2',1)]:
-        row['alternate_region_'+key]=float(np.average(d[field][cells].mean(axis=1)[alternate],weights=area[alternate]))/scale
+        row['alternate_region_'+key] = alternate[field]/scale
     x,y=xy.T
     # Boundary trapezoidal quadrature on exported nodal fields (not solver face fluxes).
     rho=d['Density'].astype(float); mom=d['Momentum'].astype(float)
@@ -97,7 +79,7 @@ for level in ['coarse','medium','fine']:
     if level=='fine':
         for field,label in [('Mach','Mach number'),('Pressure','Pressure (Pa)')]:
             fig,ax=plt.subplots(figsize=(10,5))
-            collection=PolyCollection(poly,array=d[field][cells].mean(axis=1),cmap='viridis',edgecolors='none',antialiased=False)
+            collection=PolyCollection(poly,array=fields[field],cmap='viridis',edgecolors='none',antialiased=False)
             ax.add_collection(collection); ax.autoscale(); ax.set_aspect('equal')
             xx=np.array([.5,1.5]); ax.plot(xx,(xx-.5)*np.tan(np.deg2rad(theory['shock_angle_deg'])),'w--',lw=1,label='Analytical shock')
             ax.plot(points[:,0],points[:,1],'r.',ms=2,label='Measured half-pressure crossing')

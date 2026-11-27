@@ -1,0 +1,72 @@
+{
+  "date": "2026-11-27",
+  "theory_mach": [
+    1.5,
+    2.0,
+    3.0
+  ],
+  "theory_angles_deg": [
+    0,
+    5,
+    10,
+    15,
+    20,
+    25,
+    30
+  ],
+  "boxes": {
+    "main": [
+      0.85,
+      1.15,
+      0.16,
+      0.22
+    ],
+    "near_wall": [
+      0.8,
+      1.2,
+      0.12,
+      0.2
+    ],
+    "upstream_box": [
+      0.8,
+      1.0,
+      0.14,
+      0.19
+    ],
+    "downstream_box": [
+      1.0,
+      1.2,
+      0.2,
+      0.26
+    ],
+    "higher_box": [
+      0.9,
+      1.1,
+      0.22,
+      0.28
+    ]
+  },
+  "pressure_thresholds": [
+    0.3,
+    0.35,
+    0.39999999999999997,
+    0.44999999999999996,
+    0.5,
+    0.5499999999999999,
+    0.6,
+    0.6499999999999999,
+    0.7
+  ],
+  "trial_cfl_order": [
+    5,
+    2,
+    10,
+    10,
+    2,
+    5
+  ],
+  "mesh": "medium",
+  "threads": 4,
+  "purpose": "Measure sensitivity and repeatability; keep every trial, including failures.",
+  "solver_sha256": "01f22d0c9de2e9a5feea666f67adf3957f503d2e14ca6fd998a9a28a11417bf7"
+}

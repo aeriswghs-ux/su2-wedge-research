@@ -10,6 +10,10 @@ We compare a computer simulation with an answer calculated from established equa
 
 The red box is the main measurement area. The dashed line is the theoretical shock. The red dots show the measured shock position. See [how measurements work](docs/METHOD.md).
 
+## New in v1.1.0
+
+Six more CFD trials, 21 equation-only cases, five sampling areas, nine shock thresholds, and a faster shared measurement routine. Read the [expanded study](docs/EXPANDED_STUDY.md) for the data, timings and limits. The original baseline results remain unchanged.
+
 ## Start here
 
 | What you want to do | Open this |
@@ -25,10 +29,10 @@ The red box is the main measurement area. The dashed line is the theoretical sho
 
 ## Download the two packages
 
-Open the [v1.0.0 release](https://github.com/aeriswghs-ux/su2-wedge-research/releases/tag/v1.0.0).
+Open the [v1.1.0 release](https://github.com/aeriswghs-ux/su2-wedge-research/releases/tag/v1.1.0).
 
-- **SU2_Wedge_Setup_v1.0.0.zip:** current instructions, code, meshes, and settings. It also includes the recovered starter for reference. It does not include completed CFD flow files or the SU2/ParaView programs.
-- **SU2_Wedge_Verified_Results_v1.0.0.zip:** everything in the setup package, plus completed runs, logs, tables, and figures.
+- **SU2_Wedge_Setup_v1.1.0.zip:** current instructions, code, meshes, and settings. It also includes the recovered starter for reference. It does not include completed CFD flow files or the SU2/ParaView programs.
+- **SU2_Wedge_Verified_Results_v1.1.0.zip:** everything in the setup package, plus completed runs, logs, tables, and figures.
 
 The original starter ZIP was not found. The recovered starter came from its extracted folder. This is stated openly; we do not claim to have recovered the original ZIP byte for byte. The previously delivered verified-results ZIP was checked against all three published final flow files.
 
@@ -59,3 +63,4 @@ The original suite has 11 checks. It tests the equations and mesh code. Passing 
 The recorded simulation used Python 3.12.10, SU2 8.6.0, and ParaView 6.2.1. The Python package versions are recorded in [requirements-lock.txt](requirements-lock.txt). SU2 and ParaView are downloaded separately from their official sites.
 
 This project used AI help to prepare code, run software, analyze results, and write documentation. It is a learning project, not a peer-reviewed paper. The student should explain and check the method before presenting it. See [sources](docs/REFERENCES.md) and [reuse notes](REUSE.md).
+
